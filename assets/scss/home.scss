@@ -1,18 +1,19 @@
 @import "./main";
 
-header{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    img{
-        flex-basis: 50%;
-        }
-}
+
 #location{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35px;
-    background: #f3f3f3;
+    background: $grey;    
+    }
+.fas{
+    margin-right: 10px;
+}
+#discovery{
+    background: $greylocation;
+    display: flex;
+    flex-direction: column;
+    
 }
