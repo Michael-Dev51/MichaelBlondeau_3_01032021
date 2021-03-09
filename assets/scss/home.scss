@@ -42,13 +42,7 @@ body {
 /*************** Operating ***************/
 /*****************************************/
 #operating{
-  height: 450px;
-  __steps{
-    list-style: none;
-    counter-reset: counterListe;
-  }
-  __step{}
-  
+  height: 450px;    
   ol{
     list-style: none;
     position: relative;
