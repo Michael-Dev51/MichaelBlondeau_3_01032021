@@ -1,4 +1,8 @@
 footer{
     background:$greyfooter ;
     height: 200px;
+    color: $white; 
+      a{color: $white;
+        font-weight: 400;
+    }       
 }
