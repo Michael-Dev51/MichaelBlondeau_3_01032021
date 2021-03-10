@@ -15,9 +15,14 @@ footer{
       } 
       a{color: $white;
         font-weight: 400;
+        &:hover{
+          border-bottom: 2px solid $white;
+        }
     }
     .fas{
       width: 25px;
       line-height: 25px;
+      margin-right: 8px;
+      font-size: 1rem;
     }       
 }
