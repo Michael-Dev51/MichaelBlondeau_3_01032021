@@ -1,11 +1,9 @@
 @import "./main";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
 /*****************************************/
 /**************** GENERAL ****************/
 /*****************************************/
-* {
-  box-sizing: border-box;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -23,8 +21,7 @@ a {
 /*****************************************/
 /*************** Location ****************/
 /*****************************************/
-#location {
-  display: flex;
+#location {  
   justify-content: center;
   align-items: center;
   height: 35px;
@@ -106,9 +103,4 @@ a {
   }
   @include home-card;
 }
-/*****************************************/
-/**************** Footer *****************/
-/*****************************************/
-footer{
-  
-}
+
