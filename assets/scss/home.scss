@@ -41,12 +41,16 @@ a {
 /*****************************************/
 #discovery {
   background: $ligthgrey;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   height: 350px;
   padding-bottom: 50px;
+  h2{
+    margin-bottom: 25px;
+  }
   p {
     font-weight: 300;
+    margin-bottom: 45px;
   }
 }
 /*****************************************/
@@ -125,6 +129,20 @@ a {
     li:first-child{
       margin-left: 10px;
     }
+  }
+  #restaurants{
+    .__restauContainer{
+      flex-direction: row;
+      flex-basis: 100%; 
+      justify-content: space-between;     
+    }
+    .--col1,.--col2{
+      flex-basis: 45%;
+      
+      
+    }
+    
+
   }
    
 }
