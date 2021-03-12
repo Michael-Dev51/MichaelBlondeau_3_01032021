@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 /*****************************************/
-/*************** Location ****************/
+/**************** Local ******************/
 /*****************************************/
 .local{
   justify-content: center;
@@ -34,8 +34,10 @@ a {
   height: 35px;
   background: $grey;
   h2 {
-    font-weight: 400;
-    font-size: 1.2rem;
+    font:{
+      weight: 400;
+      size: 1.2rem;
+    }
   }
   .map__icon{
     margin-right: 20px;
@@ -44,18 +46,17 @@ a {
 }
 
 /*****************************************/
-/*************** Discovery ***************/
+/*************** Explo ***************/
 /*****************************************/
-#discovery {
+.explo {
   background: $ligthgrey;
   justify-content: center;
-  text-align: center;
-  height: 350px;
+  text-align: center;  
   padding-bottom: 50px;
-  h2{
+  .explo__title{
     margin-bottom: 25px;
   }
-  p {    
+  .explo__text {    
     margin-bottom: 45px;
   }
 }
