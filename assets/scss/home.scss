@@ -15,6 +15,13 @@ h2 {
   font-size: 2rem;
   font-weight: 900;
 }
+h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+p{
+  font-weight: 300;
+}
 a {
   text-decoration: none;
 }
@@ -48,8 +55,7 @@ a {
   h2{
     margin-bottom: 25px;
   }
-  p {
-    font-weight: 300;
+  p {    
     margin-bottom: 45px;
   }
 }
@@ -108,12 +114,12 @@ a {
 /*****************************************/
 
 #restaurants {
-  background: $ligthgrey;
-  h2 {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
+  background: $ligthgrey; 
+  padding-top: 70px;
   @include home-card;
+  .__restauContainer{
+    margin-top: 35px;
+  }
 }
 
 @media screen and (min-width:1000px){
