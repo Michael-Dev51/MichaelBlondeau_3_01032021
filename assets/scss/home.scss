@@ -120,24 +120,27 @@ a {
   .__restauContainer{
     margin-top: 35px;
   }
-  @include home-card;
+  
 }
 
 @media screen and (min-width:1000px){
-  #operating{
-    .__operatingContainer ol {
+  .operation{
+    @include size-desktop;
+    &__steps {
       flex-direction: row;
-      justify-content: space-around;      
+      justify-content: space-around;
+      .steps__step{
+        flex:1;
+        margin: 0 0 0 32px;      
+      }      
     }
-    li{
-      flex:1;
-      margin: 0 0 0 32px;      
-    }
+    
     li:first-child{
       margin-left: 10px;
     }
   }
   #restaurants{
+    @include size-desktop;
     .__restauContainer{
       flex-direction: row;
       flex-basis: 100%; 
