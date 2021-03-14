@@ -53,10 +53,10 @@ a {
   justify-content: center;
   text-align: center;  
   padding-bottom: 50px;
-  .explo__title{
+  &__title{
     margin-bottom: 25px;
   }
-  .explo__text {    
+  &__text {    
     margin-bottom: 45px;
   }
 }
@@ -65,11 +65,11 @@ a {
 /*****************************************/
 .operation {
   padding: 65px 30px 90px 30px;  
-  .operation__container{
+  &__container{
     margin-top: 10px;
     padding: 0 16px 0 16px;
   }
-  .operation__steps {
+  &__steps {
     list-style: none;
     position: relative;
     counter-reset: li;
@@ -116,11 +116,11 @@ a {
 
 #restaurants {
   background: $ligthgrey; 
-  padding-top: 70px;
-  @include home-card;
+  padding-top: 70px;  
   .__restauContainer{
     margin-top: 35px;
   }
+  @include home-card;
 }
 
 @media screen and (min-width:1000px){
