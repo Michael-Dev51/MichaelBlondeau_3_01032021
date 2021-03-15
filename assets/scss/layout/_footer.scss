@@ -1,7 +1,6 @@
 footer{
     .about{
-        max-width: 1280px;
-        margin: auto;
+        @include size-desktop;
         padding: 32px;
     }
     background: $greyfooter;    
