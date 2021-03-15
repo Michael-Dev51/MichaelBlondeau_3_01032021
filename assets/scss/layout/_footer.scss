@@ -1,6 +1,10 @@
 footer{
-    background: $greyfooter;
-    padding: 25px;
+    .about{
+        max-width: 1280px;
+        margin: auto;
+        padding: 32px;
+    }
+    background: $greyfooter;    
     h1{
         font-family: 'Shrikhand';
         font-size: 1.5rem;
