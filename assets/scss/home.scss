@@ -64,10 +64,10 @@ a {
 /*************** Operation ***************/
 /*****************************************/
 .operation {
-  padding: 32px 16px 32px 16px;  
+  padding: 50px 16px 70px 16px;  
   &__container{
     margin-top: 10px;
-    padding: 0 16px 0 16px;
+    padding: 0;
   }
   &__steps {
     list-style: none;
@@ -128,10 +128,10 @@ a {
   .operation{
     @include size-desktop;
     &__steps {
-      flex-direction: row;
-      justify-content: space-around;
-      .steps__step{      
-        margin: 0 0 0 16px;      
+      flex-direction: row;      
+      .steps__step{
+        flex: 1;      
+        margin: 25px 0 0 25px;      
       }      
     }
     
