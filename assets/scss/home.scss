@@ -64,7 +64,7 @@ a {
 /*************** Operation ***************/
 /*****************************************/
 .operation {
-  padding: 65px 30px 90px 30px;  
+  padding: 32px 16px 32px 16px;  
   &__container{
     margin-top: 10px;
     padding: 0 16px 0 16px;
@@ -85,12 +85,15 @@ a {
         content: counter(li);
         color: $white;
         background: $primary;
-        width: 30px;
-        line-height: 30px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         position: absolute;
-        margin-left: -45px;
-        text-align: center;
+        margin-left: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
       }
       &:hover {
         background: lighten($color: $primary, $amount: 30%);
@@ -101,13 +104,11 @@ a {
     }
   }
   .ope__icon {
-    margin-right: 25px;
-    margin-left: 10px;
-    margin-top: 3px;
-    width: 24px;
-    line-height: 25px;
-    font-size: 24px;
+    margin-right: 20px;    
+    width: 24px;    
+    font-size: 20px;
     color: gray;
+    text-align: center;
   }
 }
 /*****************************************/
@@ -123,20 +124,19 @@ a {
   
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:1024px){
   .operation{
     @include size-desktop;
     &__steps {
       flex-direction: row;
       justify-content: space-around;
-      .steps__step{
-        flex:1;
-        margin: 0 0 0 32px;      
+      .steps__step{      
+        margin: 0 0 0 16px;      
       }      
     }
     
     li:first-child{
-      margin-left: 10px;
+      margin-left: 0;
     }
   }
   #restaurants{
