@@ -1,0 +1,13 @@
+.btn{
+  &--primary{
+    background: linear-gradient($secondary,$primary);
+    padding: 20px;
+    color: $white;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.25);
+  }
+}

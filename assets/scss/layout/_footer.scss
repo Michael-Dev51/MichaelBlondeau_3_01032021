@@ -1,0 +1,31 @@
+footer{
+    .about{
+        @include size-desktop;
+        padding: 32px;
+    }
+    background: $greyfooter;    
+    h1{
+        font-family: 'Shrikhand';
+        font-size: 1.5rem;
+        color: $white;
+        margin-bottom: 20px;
+    }    
+    ul li{        
+        margin-bottom: 15px;
+    }
+    a{
+        color: $white;
+        &:hover{
+            border-bottom: $white solid 1px;
+        }
+    }
+}
+.fa-utensils,.fa-hands-helping{
+    color: $white;
+    width: 15px;
+    height: 19px;
+    margin-right: 20px;
+}
+.fa-hands-helping{
+    font-size: 0.85rem;
+}
