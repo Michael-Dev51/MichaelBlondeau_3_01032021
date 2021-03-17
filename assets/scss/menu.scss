@@ -14,3 +14,12 @@ main{
         border-radius: unset;
     }
 }
+.button{
+    margin-top: 60px;
+    margin-bottom: 70px;
+.btn{    
+    &--primary{
+        padding:20px 60px 20px 60px ;
+    }
+}
+}
