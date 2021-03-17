@@ -2,3 +2,6 @@
  max-width: 1280px;
  margin: auto;
 }
+@mixin rounded($radius:10px 10px 0 0) {
+ border-radius: $radius;
+}
