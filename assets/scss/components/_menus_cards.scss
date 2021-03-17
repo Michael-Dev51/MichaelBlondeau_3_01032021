@@ -1,38 +1,38 @@
-.french_menu{
-    background: $ligthgrey;
-    @include rounded(30px 30px 0 0);
-    position: relative;
-    margin-top: -50px;
-    padding: 32px 20px 30px 20px;
-    z-index: 1;
-    
+.french_menu {
+  background: $ligthgrey;
+  @include rounded(30px 30px 0 0);
+  position: relative;
+  margin-top: -50px;
+  padding: 32px 20px 30px 20px;
+  z-index: 1;
 }
-.menu{
-    margin-bottom: 55px;
-    
-    .submenu{
-      position: relative;
-      padding-bottom: .5rem;
-      margin-bottom: 16px;
-       }
-    .submenu:after{
-        content: "";
-        background-color: $tertiary;
-        width: 45px;
-        height: 3px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }   
+.menu {
+  margin-bottom: 55px;
+
+  &__submenu {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 16px;
+  }
+  &__submenu:after {
+    content: "";
+    background-color: $tertiary;
+    width: 45px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
-.choices{
-    padding: 16px;      
-}
-.choices__cards{
+.choices {
+  padding: 16px;
+
+  &__cards {
     justify-content: space-between;
     margin-right: 16px;
-    .choices--price{
-        font-weight: bold;
+    .choices--price {
+      font-weight: bold;
     }
+  }
 }
