@@ -28,13 +28,17 @@ h2 {
   }
 }
 h4 {
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 10px;
+}
+p{
+  font-weight: 100;
 }
 
 .button {
   margin-top: 60px;
   margin-bottom: 70px;
+  flex-basis: 100%;
   .btn {
     &--primary {
       padding: 20px 60px 20px 60px;
@@ -49,10 +53,6 @@ h4 {
         justify-content: space-around;
     }
     h2{width: 100%;}
-    .choices {     
-        &__cards {
-         
-          }
-        }
-      }
+    
+      
 }
