@@ -6,7 +6,7 @@
   padding: 32px 20px 30px 20px;
   z-index: 1;
   section {
-    margin-bottom: 55px;    
+    margin-bottom: 55px;
     h3 {
       position: relative;
       padding-bottom: 0.5rem;
@@ -22,14 +22,15 @@
       }
     }
     article {
-      padding: 16px;      
+      padding: 16px;
       h4 {
         font-weight: 400;
         margin-bottom: 10px;
-        font-size: 1.2rem;  
+        font-size: 1.2rem;
       }
-      h4,div p:first-child{
-        white-space: nowrap;        
+      h4,
+      div p:first-child {
+        white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         height: 20px;

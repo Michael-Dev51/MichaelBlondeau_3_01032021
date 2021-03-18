@@ -28,13 +28,12 @@ h2 {
   }
 }
 
-
-p{
+p {
   font-weight: 100;
   font-size: 1.2rem;
 }
 
-.button {  
+.button {
   margin-bottom: 70px;
   flex-basis: 100%;
   .btn {
@@ -43,22 +42,22 @@ p{
     }
   }
 }
-@media screen and (min-width: 1024px){    
-    main img{
-      height: 450px;
+@media screen and (min-width: 1024px) {
+  main img {
+    height: 450px;
+  }
+  #menu {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    section {
+      width: 32%;
     }
-    #menu{
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        section{
-          width: 32%;
-        }
-    }
-    h2{width: 100%;}
-    
-      
+  }
+  h2 {
+    width: 100%;
+  }
 }
