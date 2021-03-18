@@ -31,6 +31,7 @@ h2 {
 
 p{
   font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .button {  
@@ -42,18 +43,20 @@ p{
     }
   }
 }
-@media screen and (min-width: 1024px){
-    body{font-size: 1rem;}
+@media screen and (min-width: 1024px){    
     main img{
       height: 450px;
     }
     #menu{
-        max-width: 1200px;
+        max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        section{
+          width: 32%;
+        }
     }
     h2{width: 100%;}
     

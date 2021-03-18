@@ -6,8 +6,7 @@
   padding: 32px 20px 30px 20px;
   z-index: 1;
   section {
-    margin-bottom: 55px;
-    flex-basis: 30%;
+    margin-bottom: 55px;    
     h3 {
       position: relative;
       padding-bottom: 0.5rem;
@@ -23,22 +22,25 @@
       }
     }
     article {
-      padding: 16px;
-      height: 75px;
+      padding: 16px;      
       h4 {
         font-weight: 400;
-        margin-bottom: 10px;  
+        margin-bottom: 10px;
+        font-size: 1.2rem;  
       }
       h4,div p:first-child{
-        white-space: nowrap;
-        overflow: hidden;
+        white-space: nowrap;        
         text-overflow: ellipsis;
+        overflow: hidden;
+        height: 20px;
+        flex-basis: 100%;
       }
       div {
         justify-content: space-between;
 
         strong {
           font-weight: bold;
+          opacity: 0.6;
         }
       }
     }
