@@ -28,7 +28,7 @@ a {
 /*****************************************/
 /**************** Local ******************/
 /*****************************************/
-.local {
+#local {
   justify-content: center;
   align-items: center;
   height: 35px;
@@ -48,32 +48,32 @@ a {
 /*****************************************/
 /***************** Explo *****************/
 /*****************************************/
-.explo {
+#explo {
   background: $ligthgrey;
   justify-content: center;
   text-align: center;
   padding-bottom: 50px;
-  &__title {
+  h2 {
     margin-bottom: 25px;
   }
-  &__text {
+  p {
     margin-bottom: 45px;
   }
 }
 /*****************************************/
 /*************** Operation ***************/
 /*****************************************/
-.operation {
+#operation {
   padding: 50px 16px 70px 16px;
-  &__container {
+  div {
     margin: 10px 8px 0 12px;
     padding: 0;
   }
-  &__steps {
+  ol {
     list-style: none;
     position: relative;
     counter-reset: li;
-    .steps__step {
+    li {
       background-color: $ligthgrey;
       padding: 25px 0 25px 0;
       margin-top: 25px;
@@ -124,11 +124,11 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .operation {
+  #operation {
     @include size-desktop;
-    &__steps {
+    ol {
       flex-direction: row;
-      .steps__step {
+      li {
         flex: 1;
         margin: 25px 0 0 25px;
       }

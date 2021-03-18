@@ -3,7 +3,9 @@ header {
   box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.25);
   position: relative;
   z-index: 1000;
-  img {
+  h1 {
+    font-family: "Shrikhand";
+    font-size: 2.5rem;
     display: block;
     width: 196px;
     margin: auto;
