@@ -32,6 +32,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        flex-basis: 85%;
         h4,
         p {
           white-space: nowrap;
@@ -46,6 +47,7 @@
         align-items: flex-end;
         font-weight: bold;
         opacity: 0.6;
+        flex-basis: 15%;
       }
       .check {
         margin: -1rem -5rem -1rem 1rem;
