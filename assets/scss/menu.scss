@@ -6,9 +6,9 @@ body {
 header {
   display: flex;
   .btn--return {
-    position: relative;
-    left: 10px;
-    line-height: 34px;
+    position: absolute;
+    left: 20px;
+    top: 32%;
     color: $black;
   }
 }
