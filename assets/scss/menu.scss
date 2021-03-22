@@ -1,1 +1,63 @@
 @import "./main";
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+header {
+  display: flex;
+  .btn--return {
+    position: absolute;
+    left: 20px;
+    top: 32%;
+    color: $black;
+  }
+}
+main {
+  img {
+    border-radius: unset;
+  }
+}
+h2 {
+  font-family: "Shrikhand";
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  .heart__icon {
+    margin-right: 20px;
+  }
+}
+
+p {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.button {
+  margin-bottom: 70px;
+  flex-basis: 100%;
+  .btn {
+    &--primary {
+      padding: 20px 60px 20px 60px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  main img {
+    height: 450px;
+  }
+  #menu {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    section {
+      width: 32%;
+    }
+  }
+  h2 {
+    width: 100%;
+  }
+}

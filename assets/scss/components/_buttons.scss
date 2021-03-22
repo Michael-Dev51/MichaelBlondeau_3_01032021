@@ -1,6 +1,6 @@
-.btn{
-  &--primary{
-    background: linear-gradient($secondary,$primary);
+.btn {
+  &--primary {
+    background: linear-gradient($secondary, $primary);
     padding: 20px;
     color: $white;
     text-decoration: none;

@@ -19,7 +19,7 @@ h3 {
   font-weight: 600;
   margin-bottom: 8px;
 }
-p{
+p {
   font-weight: 300;
 }
 a {
@@ -28,7 +28,7 @@ a {
 /*****************************************/
 /**************** Local ******************/
 /*****************************************/
-.local{
+#local {
   justify-content: center;
   align-items: center;
   height: 35px;
@@ -39,41 +39,41 @@ a {
       size: 1.2rem;
     }
   }
-  .map__icon{
+  .map__icon {
     margin-right: 20px;
     font-size: 1.25rem;
-  } 
+  }
 }
 
 /*****************************************/
 /***************** Explo *****************/
 /*****************************************/
-.explo {
+#explo {
   background: $ligthgrey;
   justify-content: center;
-  text-align: center;  
+  text-align: center;
   padding-bottom: 50px;
-  &__title{
+  h2 {
     margin-bottom: 25px;
   }
-  &__text {    
+  p {
     margin-bottom: 45px;
   }
 }
 /*****************************************/
 /*************** Operation ***************/
 /*****************************************/
-.operation {
-  padding: 50px 16px 70px 16px;  
-  &__container{
+#operation {
+  padding: 50px 16px 70px 16px;
+  div {
     margin: 10px 8px 0 12px;
     padding: 0;
   }
-  &__steps {
+  ol {
     list-style: none;
     position: relative;
     counter-reset: li;
-    .steps__step {
+    li {
       background-color: $ligthgrey;
       padding: 25px 0 25px 0;
       margin-top: 25px;
@@ -93,7 +93,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-       
       }
       &:hover {
         background: lighten($color: $primary, $amount: 30%);
@@ -105,8 +104,8 @@ a {
   }
   .ope__icon {
     margin-right: 20px;
-    margin-left: 20px;    
-    width: 24px;    
+    margin-left: 20px;
+    width: 24px;
     font-size: 20px;
     color: gray;
     text-align: center;
@@ -117,43 +116,38 @@ a {
 /*****************************************/
 
 #restaurants {
-  background: $ligthgrey; 
-  padding-top: 70px;  
-  .__restauContainer{
+  background: $ligthgrey;
+  padding-top: 70px;
+  .__restauContainer {
     margin-top: 35px;
   }
-  
 }
 
-@media screen and (min-width:1024px){
-  .operation{
+@media screen and (min-width: 1024px) {
+  #operation {
     @include size-desktop;
-    &__steps {
-      flex-direction: row;      
-      .steps__step{
-        flex: 1;      
-        margin: 25px 0 0 25px;      
-      }      
+    ol {
+      flex-direction: row;
+      li {
+        flex: 1;
+        margin: 25px 0 0 25px;
+      }
     }
-    
-    li:first-child{
+
+    li:first-child {
       margin-left: 0;
     }
   }
-  #restaurants{
+  #restaurants {
     @include size-desktop;
-    .__restauContainer{
+    .__restauContainer {
       flex-direction: row;
-      flex-basis: 100%; 
-      justify-content: space-between;     
+      flex-basis: 100%;
+      justify-content: space-between;
     }
-    .--col1,.--col2{
+    .--col1,
+    .--col2 {
       flex-basis: 45%;
-      
-      
     }
-    
-
   }
-   
 }

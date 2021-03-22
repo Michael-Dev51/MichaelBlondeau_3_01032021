@@ -2,118 +2,123 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="ohmyfood est un site de réservation de menu en ligne, qui vous permet de ne pas attendre en arrivant à votre restaurant." />
+    <meta
+      name="description"
+      content="ohmyfood est un site de réservation de menu en ligne, qui vous permet de ne pas attendre en arrivant à votre restaurant."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
+    <script
+      src="https://kit.fontawesome.com/ca4c042e28.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/menus.css" />
   </head>
   <body>
     <header>
-      <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-      <img src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood" />
+      <a href="../index.html"><i class="btn--return fas fa-arrow-left"></i></a>
+      <h1>ohmyfood</h1>
     </header>
     <main>
       <img
         src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
         alt="Photo menu à la française"
       />
-      <section id="french_menu">
-        <h2>&Agrave; la française <i class="far fa-heart"></i></h2>
-        <section id="entries">
-          <h3>ENTR&Egrave;ES</h3>
-          <article>
-            <h4>Tartare de poulpe acidulé</h4>
-            <div>
-              <p>Aux zests d'orange</p>
-              <p>25€</p>
+      <section id="menu" class="d-flex f-column">
+        <h2>À la française <i class="fa-heart far heart__icon"></i></h2>
+        <section>
+          <h3>ENTRÉES</h3>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Tartare de poulpe acidulé</h4>
+              <p>Aux zests d'orange</p>              
             </div>
+            <div class="price"><strong>25€</strong></div>
           </article>
-          <article>
-            <h4>Velouté de légumes d'antan</h4>
-            <div>
-              <p>Carotte, panais, topinambour</p>
-              <p>35€</p>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Velouté de légumes d'antan</h4>
+              <p>Carotte, panais, topinambour</p>              
             </div>
+            <div class="price"><strong>35€</strong></div>
           </article>
-          <article>
-            <h4>Soupe à l'oignon</h4>
-            <div>
-              <p>Revisité</p>
-              <p>20€</p>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Soupe à l'oignon</h4>
+              <p>Revisité</p>             
             </div>
+            <div class="price"><strong>20€</strong></div>
           </article>
         </section>
-        <section id="dishes">
+        <section>
           <h3>PLATS</h3>
-          <article>
-            <h4>Coquilles Saint-Jacques</h4>
-            <div>
+          <article class="d-flex">
+            <div class="designation">
+              <h4>Coquilles Saint-Jacques</h4>
               <p>Accompagnées d'une purée de panais</p>
-              <p>40€</p>
             </div>
+            <div class="price"><strong>40€</strong></div>            
           </article>
-          <article>
-            <h4>Magret de canard</h4>
-            <div>
-              <p>Et parmentier de pommes de terres</p>
-              <p>35€</p>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Magret de canard</h4>
+              <p>Et parmentier de pommes de terres</p>              
             </div>
+            <div class="price"><strong>35€</strong></div>
           </article>
-          <article>
-            <h4>Pigeonneau d'Ille-et-vilaine</h4>
-            <div>
-              <p>Sur son lit de gnocchis aux légumes</p>
-              <p>44€</p>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Pigeonneau d'Ille-et-vilaine</h4>
+              <p>Sur son lit de gnocchis aux légumes</p>             
             </div>
+            <div class="price"><strong>44€</strong></div>
           </article>
         </section>
-        <section id="dessert">
+        <section>
           <h3>DESSERTS</h3>
-          <article>
-            <h4>Pétales de violettes glacés</h4>
-            <div>
-              <p>Et purée de noisettes</p>
-              <p>18€</p>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Pétales de violettes glacés</h4>
+              <p>Et purée de noisettes</p>              
             </div>
+            <div class="price"><strong>18€</strong></div>
           </article>
-          <article>
-            <h4>Fondant au chocolat</h4>
-            <div>
-              <p>Revisité</p>
-              <p>22€</p>
+          <article class="d-flex">           
+            <div class="designation">
+              <h4>Fondant au chocolat</h4>
+              <p>Revisité</p>             
             </div>
+            <div class="price"><strong>22€</strong></div>
           </article>
-          <article>
-            <h4>Millefeuille croustillant</h4>
-            <div>
-              <p>Myrtilles et pâte d'amande</p>
-              <p>23€</p>
+          <article class="d-flex">            
+            <div class="designation">
+              <h4>Millefeuille croustillant</h4>
+              <p>Myrtilles et pâte d'amande</p>             
             </div>
+            <div class="price"><strong>23€</strong></div>
           </article>
-          <a href="#">Commander</a>
         </section>
-      </section>
-      <footer>
-        <div>
-          <span
-            ><img
-              src="../assets/images/logo/ohmyfood@2x.svg"
-              alt="Logo homyfood"
-            />
-          </span>
-          <ul>
-            <li>
-              <i class="fas fa-utensils"></i
-              ><a href="#">Proposer un restaurant</a>
-            </li>
-            <li>
-              <i class="fas fa-hands-helping"></i
-              ><a href="#">Devenir partenaire</a>
-            </li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="button d-flex">
+          <a class="btn btn--primary" href="#">Commander</a>
         </div>
-      </footer>
+      </section>
     </main>
+    <footer>
+      <div>
+        <h1>ohmyfood</h1>
+        <ul>
+          <li>
+            <i class="fas fa-utensils"></i
+            ><a href="#">Proposer un restaurant</a>
+          </li>
+          <li>
+            <i class="fas fa-hands-helping"></i
+            ><a href="#">Devenir partenaire</a>
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
