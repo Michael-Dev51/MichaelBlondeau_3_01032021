@@ -1,5 +1,5 @@
 .btn {
-  &--primary {
+  
     background: linear-gradient($secondary, $primary);
     padding: 20px;
     color: $white;
@@ -9,5 +9,10 @@
     align-items: center;
     border-radius: 32px;
     box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.25);
+    transition: opacity 100ms,box-shadow 200ms ease-in;
+    &:hover{
+      box-shadow: 6px 8px 10px 2px rgba(0, 0, 0, 0.25);
+     opacity: 0.8;
   }
+  
 }
