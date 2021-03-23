@@ -8,6 +8,38 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
+#loading-spinner{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  top: 0;
+  z-index: 9999;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidden 3s forwards;
+  div{
+    width: 100px;
+    height: 100px; 
+    background-color: $tertiary;   
+    border: 10px solid $secondary;
+    border-radius: 50%;
+    border-top: 10px solid $primary;
+    animation: spin 0.75s linear infinite;  
+    
+   
+  }
+  span{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75rem;
+    font-family: Shrikhand ;
+    color: gray;
+  }
+}
 section {
   padding: 32px;
 }
