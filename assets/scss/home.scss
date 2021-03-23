@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: hidden 3s forwards;
+  animation: hidden 2s forwards;
   div{
     width: 100px;
     height: 100px; 
@@ -27,7 +27,7 @@ body {
     border: 10px solid $secondary;
     border-radius: 50%;
     border-top: 10px solid $primary;
-    animation: spin 0.75s linear infinite;  
+    animation: spin 0.5s linear infinite;  
     
    
   }
