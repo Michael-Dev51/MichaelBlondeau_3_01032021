@@ -37,41 +37,32 @@ figure {
     height: 30%;
     padding: 22px 30px 0 15px;
     justify-content: space-between;
-  .heart{
-    position: relative;
-    .empty-heart,.full-heart{
+    .heart{
+      position: relative;
+      .empty-heart,.full-heart{
       width: 24px;
       height: 24px;
-    }
-    .empty-heart{
+      }
+      .empty-heart{
     
       z-index: -1;      
       fill: #818181;        
                    
-    } 
-    .full-heart{
+      } 
+      .full-heart{
       position: absolute;
       top: 0;
       right: 0;
       z-index: 9999;
-      opacity: 0;  
-      
-     
-     
-      &:hover { 
-        transform-origin: center;
-        transform: scaleX(1);    
-        animation: heart .4s linear; 
-        animation-fill-mode: both;       
-        opacity: 0.95;
-                
-      }
-      
-     
-      
-    } 
-  }
-  
-  
+      opacity: 0;    
+        &:hover { 
+          transform-origin: center;
+          transform: scaleX(1);    
+          animation: heart .4s linear; 
+          animation-fill-mode: both;       
+          opacity: 0.95;                
+        }      
+      } 
+    }  
   }
 }
