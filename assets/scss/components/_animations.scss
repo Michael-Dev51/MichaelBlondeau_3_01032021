@@ -15,16 +15,22 @@
 }
 @keyframes heart{
     0% {
-        transform: scaleY(0);
+        transform: scaleX(0);
+        opacity: .1;
       }
       25% {
-        transform: scaleY(.25);
+        transform: scaleX(.25);
+        opacity: .5;
       }
       50%{
-          transform: scaleY(.5);
+          transform: scaleX(.5);
+          opacity: 1;
+      }
+      85%,100%{
+          opacity: 1;
       }
 
       100% {
-        transform: scaleY(1);
+        transform: scaleX(1);
       }
 }

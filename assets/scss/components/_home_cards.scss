@@ -45,26 +45,29 @@ figure {
     }
     .empty-heart{
     
-      z-index: -1;
-      cursor: pointer;
-          fill: #818181;        
-          transition: .4s;
-          width: 24px;
-      height: 24px;
+      z-index: -1;      
+      fill: #818181;        
+                   
     } 
     .full-heart{
       position: absolute;
       top: 0;
       right: 0;
       z-index: 9999;
-      opacity: 0;
-      transform-origin: 50% 100%;
-      &:active {     
-        animation: heart .4s;
-        fill: #9356DC;
-        opacity: 1;
-        
+      opacity: 0;  
+      
+     
+     
+      &:hover { 
+        transform-origin: center;
+        transform: scaleX(1);    
+        animation: heart .4s linear; 
+        animation-fill-mode: both;       
+        opacity: 0.95;
+                
       }
+      
+     
       
     } 
   }
