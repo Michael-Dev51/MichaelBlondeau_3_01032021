@@ -172,12 +172,12 @@ a {
   }
   #restaurants {
     @include size-desktop;
-    .__restauContainer {
+    &.__restauContainer {
       flex-direction: row;
       flex-basis: 100%;
       justify-content: space-between;
     }
-    .--col1,
+    &.--col1,
     .--col2 {
       flex-basis: 45%;
     }
