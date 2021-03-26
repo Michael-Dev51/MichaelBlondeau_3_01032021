@@ -6,9 +6,13 @@
   padding: 32px 20px 30px 20px;
   z-index: 1;
   span{
-    justify-content: space-between;
-  }
+    flex-basis: 100%;
+    justify-content: space-between;  
   @include like;
+    .heart{
+      margin-right: 45px;
+    }
+  }
   section {
     margin-bottom: 55px;
     
@@ -53,6 +57,7 @@
         font-weight: bold;
         opacity: 0.6;
         flex-basis: 15%;
+        justify-content: center;
       }
       .check {
         margin: -1rem -5rem -1rem 1rem;
