@@ -5,8 +5,13 @@
   margin-top: -70px;
   padding: 32px 20px 30px 20px;
   z-index: 1;
+  span{
+    justify-content: space-between;
+  }
+  @include like;
   section {
     margin-bottom: 55px;
+    
     h3 {
       position: relative;
       padding-bottom: 0.5rem;

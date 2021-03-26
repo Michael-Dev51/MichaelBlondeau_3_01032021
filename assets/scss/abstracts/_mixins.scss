@@ -5,3 +5,31 @@
 @mixin rounded($radius: 10px 10px 0 0) {
   border-radius: $radius;
 }
+@mixin like {
+  .heart{
+    position: relative;
+    .empty-heart,.full-heart{
+    width: 24px;
+    height: 24px;
+    }
+    .empty-heart{
+  
+    z-index: -1;      
+    fill: #818181;        
+                 
+    } 
+    .full-heart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0;
+    fill: $secondary;    
+      &:active {           
+        transform: scaleX(1);    
+        animation: heart .4s;                 
+        opacity: 0.95;                
+      }      
+    } 
+  }  
+}
