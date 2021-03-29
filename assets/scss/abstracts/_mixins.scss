@@ -1,7 +1,36 @@
 @mixin size-desktop {
   max-width: 1280px;
-  margin: auto;
+  margin: 0 auto;
+ 
 }
 @mixin rounded($radius: 10px 10px 0 0) {
   border-radius: $radius;
+}
+@mixin like {
+  .heart{
+    position: relative;
+    .empty-heart,.full-heart{
+    width: 30px;
+    height: 30px;
+    }
+    .empty-heart{
+  
+    z-index: -1;      
+    fill: #818181;        
+                 
+    } 
+    .full-heart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0;
+    fill: $secondary;    
+     
+    } 
+    &:hover .full-heart {           
+      animation: heart .4s;                 
+      opacity: 0.95;                
+    }      
+  }  
 }
