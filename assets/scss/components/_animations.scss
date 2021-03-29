@@ -37,11 +37,12 @@
 }
 @keyframes appear{
     from{
-        transform: translateY(20px);
+        transform: translateY(20px) scale(0);        
         opacity: 0;        
     }
+    50%{transform:translateY(10px) scale(1.05);}
     to{
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
         opacity: 1;
     }
 }

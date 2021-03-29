@@ -29,21 +29,45 @@
     article {
       padding: 16px;
       justify-content: space-between; 
+      animation: appear .6s both;
+      transform: translateY(0) scale(0);
+      transition-timing-function: cubic-bezier(0,.54,1,.69);
       &.appearOne{
-        animation: appear 2s both;
-        transform: translateY(0);
-        animation-delay: 0.2s;
+        
+        animation-delay: .06s;
       }
       &.appearTwo{        
-        animation: appear 2s both;
-        transform: translateY(0);
-        animation-delay: 0.4s;        
+        
+        animation-delay: .13s;        
       }
       &.appearThree{
-        animation: appear 2s both;
-        transform: translateY(0);
-        animation-delay: 0.6s;
-      }    
+        
+        animation-delay: .19s;
+      }  
+      &.appearFour{
+        
+        animation-delay: .26s;
+      }  
+      &.appearFive{
+        
+        animation-delay: .33s;
+      }  
+      &.appearSix{
+        
+        animation-delay: .39s;
+      }
+      &.appearSeven{
+        
+        animation-delay: .46s;
+      }  
+      &.appearEight{
+        
+        animation-delay: .53s;
+      } 
+      &.appearNine{
+        
+        animation-delay: .59s;
+      }                               
      
       h4 {
         font-weight: 400;
