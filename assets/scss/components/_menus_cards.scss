@@ -29,7 +29,7 @@
     article {
       padding: 16px;
       justify-content: space-between; 
-      animation: appear .6s both;
+      animation: appear .5s both;
       transform: translateY(0) scale(0);
       transition-timing-function: cubic-bezier(0,.54,1,.69);
       &.appearOne{
@@ -38,35 +38,35 @@
       }
       &.appearTwo{        
         
-        animation-delay: .13s;        
+        animation-delay: .25s;        
       }
       &.appearThree{
         
-        animation-delay: .19s;
+        animation-delay: .50s;
       }  
       &.appearFour{
         
-        animation-delay: .26s;
+        animation-delay: .75s;
       }  
       &.appearFive{
         
-        animation-delay: .33s;
+        animation-delay: 1s;
       }  
       &.appearSix{
         
-        animation-delay: .39s;
+        animation-delay: 1.25s;
       }
       &.appearSeven{
         
-        animation-delay: .46s;
+        animation-delay: 1.50s;
       }  
       &.appearEight{
         
-        animation-delay: .53s;
+        animation-delay: 1.75s;
       } 
       &.appearNine{
         
-        animation-delay: .59s;
+        animation-delay: 2s;
       }                               
      
       h4 {
