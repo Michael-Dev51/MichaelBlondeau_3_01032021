@@ -96,7 +96,8 @@ a {
 /*************** Operation ***************/
 /*****************************************/
 #operation {
-  padding: 50px 16px 70px 16px;
+  padding-top: 50px;
+  padding-bottom: 70px;
   div {
     margin: 10px 8px 0 12px;
     padding: 0;
@@ -157,9 +158,9 @@ a {
 
 @media screen and (min-width: 1024px) {
   #operation {
-    @include size-desktop;
-    padding-left: 0;
-    padding-right: 0;
+    div{
+   @include size-desktop;
+    }   
     ol {
       flex-direction: row;
       li {
