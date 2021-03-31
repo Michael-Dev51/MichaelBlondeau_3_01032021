@@ -25,15 +25,26 @@
         bottom: 0;
       }
     }
-    @for $i from 1 to 10 {
-      .appear-#{$i} {
-        animation-delay: #{$i/10}s;
+    @for $i from 1 to 6 {
+      .entry:nth-child(#{$i}n) {
+        animation-delay: #{$i*.1}s;
       }
     }
+    @for $i from 1 to 6 {
+      .plat:nth-child(#{$i}n) {
+        animation-delay: #{$i*.2}s;
+      }
+    }
+    @for $i from 1 to 6 {
+      .dessert:nth-child(#{$i}n) {
+        animation-delay: #{$i*.3}s;
+      }
+    }
+   
     article {
       padding: 16px;
       justify-content: space-between; 
-      animation: appear .5s both;
+      animation: appear .6s both;
       transform: translateY(0);
       transition-timing-function: cubic-bezier(0,.54,1,.69);    
      
