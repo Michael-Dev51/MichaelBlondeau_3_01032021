@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
-#loading-spinner{
+#loading-spinner {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -20,23 +20,21 @@ body {
   justify-content: center;
   align-items: center;
   animation: hidden 2s forwards;
-  div{
+  div {
     width: 100px;
-    height: 100px; 
-    background-color: $tertiary;   
+    height: 100px;
+    background-color: $tertiary;
     border: 10px solid $secondary;
     border-radius: 50%;
     border-top: 10px solid $primary;
-    animation: spin 0.5s linear infinite;  
-    
-   
+    animation: spin 0.5s linear infinite;
   }
-  span{
+  span {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     font-size: 0.75rem;
-    font-family: Shrikhand ;
+    font-family: Shrikhand;
     color: gray;
   }
 }
@@ -160,9 +158,9 @@ a {
 /*****************************************/
 @media screen and (min-width: 1024px) {
   #operation {
-    div{
-   @include size-desktop;
-    }   
+    div {
+      @include size-desktop;
+    }
     ol {
       flex-direction: row;
       li {
@@ -170,24 +168,24 @@ a {
         margin: 25px 0 0 25px;
       }
     }
-
     li:first-child {
       margin-left: 0;
     }
   }
   #restaurants {
-    >div, >h2{
+    > div,
+    > h2 {
       width: 100%;
       @include size-desktop;
-    }   
+    }
     & .__restauContainer {
       flex-wrap: wrap;
       flex-direction: row;
       flex-basis: 100%;
       justify-content: space-between;
-      article{
+      article {
         flex-basis: 45%;
       }
-    }   
-  } 
+    }
+  }
 }

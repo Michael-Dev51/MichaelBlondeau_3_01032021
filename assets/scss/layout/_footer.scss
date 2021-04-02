@@ -2,7 +2,7 @@ footer {
   background: $greyfooter;
   padding: 32px;
   div {
-    @include size-desktop;    
+    @include size-desktop;
     h1 {
       font-family: "Shrikhand";
       font-size: 1.5rem;
@@ -31,4 +31,3 @@ footer {
 .fa-hands-helping {
   font-size: 0.85rem;
 }
-

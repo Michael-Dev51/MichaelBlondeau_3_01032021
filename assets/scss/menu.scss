@@ -18,7 +18,7 @@ header {
 /*****************************************/
 /***************  General  ***************/
 /*****************************************/
-img {   
+img {
   max-height: 450px;
   object-fit: cover;
   width: 100%;
@@ -30,8 +30,8 @@ main {
   margin-top: -42px;
   padding: 32px 20px 30px 20px;
   z-index: 1;
-  
-  &.section{
+
+  &.section {
     margin-top: -40px;
   }
 }
