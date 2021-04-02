@@ -47,7 +47,8 @@
       justify-content: space-between; 
       animation: appear .6s both;
       transform: translateY(0);
-      transition-timing-function: cubic-bezier(0,.54,1,.69);    
+      transition-timing-function: cubic-bezier(0,.54,1,.69);
+      overflow: hidden;    
      
       h4 {
         font-weight: 400;
@@ -74,13 +75,29 @@
         font-weight: bold;
         opacity: 0.6;        
         justify-content: center;
+        width: 15%;
+        z-index: 1;
       }
       .check {
-        margin: -1rem -5rem -1rem 1rem;
-        width: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: #99e2d0;
+    margin: -1rem -8rem -1rem 1rem;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;       
+        
+      }
+      i{
+      	transform: rotate(-360deg);
+      	transition-duration: .5s;
+      	color: white;
+      	font-size: 35px;
+      }
+      &:hover >.check {margin-right: -1rem;}
+      &:hover >.check i{
+      	transform: rotate(0deg);
+      	
       }
     }
   }
