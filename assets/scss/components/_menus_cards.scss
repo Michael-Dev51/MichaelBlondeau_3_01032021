@@ -1,5 +1,5 @@
 #menu {
- 
+  //animated heart
   #box-heart{
     flex-basis: 100%;
     justify-content: space-between;  
@@ -25,9 +25,30 @@
         bottom: 0;
       }
     }
+    //Loop of the animation of the menu cards
+    @for $i from 1 to 6 {
+      .entry:nth-child(#{$i}n) {
+        animation-delay: #{$i*.1}s;
+      }
+    }
+    @for $i from 1 to 6 {
+      .plat:nth-child(#{$i}n) {
+        animation-delay: #{0.3+$i*.1}s;
+      }
+    }
+    @for $i from 1 to 6 {
+      .dessert:nth-child(#{$i}n) {
+        animation-delay: #{0.6+$i*.1}s;
+      }
+    }
+   
     article {
       padding: 16px;
-      justify-content: space-between;
+      justify-content: space-between; 
+      animation: appear .6s both;
+      transform: translateY(0);
+      transition-timing-function: cubic-bezier(0,.54,1,.69);    
+     
       h4 {
         font-weight: 400;
         margin-bottom: 10px;
