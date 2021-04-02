@@ -1,3 +1,4 @@
+//keyframes of the animation loader
 @keyframes spin{
     from{
         transform: rotate(0deg);
@@ -13,6 +14,7 @@
     }
     
 }
+//keyframe of the animation heart
 @keyframes heart{
     0% {
         transform: scaleX(0);
@@ -35,6 +37,7 @@
         transform: scale(1);
       }
 }
+//keyframes of the animation of menu cards
 @keyframes appear{
     from{
         transform: translateY(20px) ;        
