@@ -149,7 +149,7 @@ a {
 #restaurants {
   background: $ligthgrey;
   padding-top: 50px;
-  .__restauContainer {
+  >div {
     margin-top: 35px;
   }
 }
@@ -178,7 +178,7 @@ a {
       width: 100%;
       @include size-desktop;
     }
-    & .__restauContainer {
+    >div {
       flex-wrap: wrap;
       flex-direction: row;
       flex-basis: 100%;
